@@ -1,12 +1,10 @@
-# Life Insurance Customer Churn Prediction - ML Quiz Template
+# Life Insurance Customer Retention Case Study
 
-This is a machine learning quiz template for building a customer churn prediction model using synthetic life insurance data. The project generates realistic datasets that simulate real-world insurance customer behavior patterns.
+## Context
+SecureLife Insurance is experiencing a 15% annual customer churn rate. You've been tasked with building a predictive model to identify at-risk customers and provide actionable retention strategies.
 
-## Quiz Overview
-
-**Objective:** Build a machine learning model to predict which life insurance customers are likely to churn (cancel their policies).
-
-**Your Task:** Use the provided data generation template to create training data, then develop and evaluate ML models for churn prediction.
+## Your Goal
+Build a machine learning model to predict which customers will cancel their life insurance policy in the next 90 days.
 
 ## Getting Started
 
@@ -70,32 +68,30 @@ This creates 5 CSV files with synthetic insurance data:
 - `churn_date`: When customer churned
 - `churn_reason`: Why they churned (Price, Service, etc.)
 
-## ML Challenge Tasks
+## Tasks
 
-### Task 1: Exploratory Data Analysis
-- Load and explore the generated datasets
-- Analyze churn patterns across different customer segments
-- Identify key features that correlate with churn
+### 1. Exploratory Data Analysis
+- Merge datasets and check data quality
+- Visualize churn patterns across customer segments
+- Identify key insights for feature engineering
 
-### Task 2: Feature Engineering
-- Create meaningful features from the multi-table structure
-- Handle time-series aspects of transaction data
-- Engineer features that capture customer behavior changes
+### 2. Feature Engineering
+Create meaningful features such as:
+- Policy tenure
+- Payment behavior metrics
+- Customer engagement scores
+- Any other relevant features
 
-### Task 3: Model Development
-- Build classification models to predict churn
-- Try different algorithms (Logistic Regression, Random Forest, XGBoost, etc.)
-- Handle class imbalance (15% churn rate)
+### 3. Model Development
+- Split data (60/20/20 for train/validation/test)
+- Train at least 3 different models
+- Evaluate performance (focus on AUC-ROC)
+- Identify important features
 
-### Task 4: Model Evaluation
-- Use appropriate metrics for imbalanced classification
-- Implement proper train/validation/test splits
-- Evaluate model performance and feature importance
-
-### Task 5: Business Impact Analysis
-- Calculate potential revenue saved by preventing churn
-- Develop retention strategies based on model insights
-- Create actionable recommendations for the insurance company
+### 4. Business Recommendations
+- Top 5 churn drivers
+- 3 targeted retention strategies
+- Implementation considerations
 
 ## Extending the Template
 
@@ -118,14 +114,16 @@ end_date = datetime(2024, 1, 1)
 - **Time-to-churn prediction**: Predict when customers will churn
 - **Retention intervention**: Simulate the effect of retention campaigns
 
-## Success Criteria
+## Deliverables
+1. Completed Jupyter notebook with code and analysis
+2. Brief summary of findings and recommendations
 
-Your solution should demonstrate:
-1. **Data Understanding**: Clear analysis of customer patterns and churn drivers
-2. **Feature Engineering**: Creative use of multi-table data structure
-3. **Model Performance**: Achieve meaningful predictive accuracy
-4. **Business Value**: Translate ML results into actionable business insights
-5. **Code Quality**: Clean, well-documented, reproducible code
+## Evaluation Criteria
+- Code quality and ML best practices
+- Feature engineering creativity
+- Model performance (target AUC-ROC > 0.75)
+- Business insight quality
+- Clear communication
 
 ## Tips for Success
 
