@@ -1,0 +1,20 @@
+[project]
+name = "life-churn"
+version = "0.1.0"
+description = "Life Insurance Customer Retention Case Study"
+authors = [
+    {name = "Jo",email = "metmos2023@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pandas (>=2.3.1,<3.0.0)",
+    "numpy (>=2.3.2,<3.0.0)",
+    "matplotlib (>=3.10.5,<4.0.0)",
+    "seaborn (>=0.13.2,<0.14.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
